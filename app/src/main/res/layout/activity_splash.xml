@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cast.lottery.mj.activity.SplashActivity">
+
+    <ImageView
+        android:visibility="gone"
+        android:background="@drawable/welcome"
+        android:id="@+id/wellcome_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.tmall.ultraviewpager.UltraViewPager
+        android:visibility="gone"
+        android:id="@+id/ultra_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray" />
+
+    <WebView
+        android:visibility="gone"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/spin_kit"
+        android:visibility="gone"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:SpinKit_Color="@color/color_2095f2" />
+
+    <ImageButton
+        android:visibility="gone"
+        android:background="@null"
+        android:src="@drawable/ic_refresh"
+        android:clickable="true"
+        android:id="@+id/btn_retry"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        
+        <Button
+            android:onClick="home"
+            android:textColor="@color/white"
+            android:background="@color/fbutton_color_orange"
+            android:layout_margin="2dp"
+            android:text="首页"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:onClick="back"
+            android:textColor="@color/white"
+            android:background="@color/fbutton_color_orange"
+            android:layout_margin="2dp"
+            android:text="返回"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <Button
+            android:onClick="pay"
+            android:textColor="@color/white"
+            android:background="@color/fbutton_color_orange"
+            android:layout_margin="2dp"
+            android:text="充值"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:onClick="refresh"
+            android:textColor="@color/white"
+            android:background="@color/fbutton_color_orange"
+            android:layout_margin="2dp"
+            android:text="刷新"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+</FrameLayout>
