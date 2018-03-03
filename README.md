@@ -1,5 +1,5 @@
 
-<img src="display.png" width="720px"/>
+<img src="display.png" width="480px" hight="800"/>
 ## License
 
     Copyright 2017, Yalantis
