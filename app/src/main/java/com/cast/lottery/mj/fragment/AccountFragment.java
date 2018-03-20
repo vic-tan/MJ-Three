@@ -11,7 +11,11 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.cast.lottery.mj.R;
+import com.cast.lottery.mj.activity.EmailActivity;
 import com.cast.lottery.mj.activity.LoginDeviceManager;
+import com.cast.lottery.mj.activity.PhoneActivity;
+import com.cast.lottery.mj.activity.QQActivity;
+import com.cast.lottery.mj.activity.WXActivity;
 
 /**
  * Created by Kevin on 2017/8/23.
@@ -46,24 +50,52 @@ public class AccountFragment extends BaseContentFragment {
         View phone_item = view.findViewById(R.id.phone);
         TextView p_name = (TextView) phone_item.findViewById(R.id.item_name);
         p_name.setText("手机号");
+        phone_item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), PhoneActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setupEmail(View view){
         View email_item = view.findViewById(R.id.email);
         TextView e_name = (TextView) email_item.findViewById(R.id.item_name);
         e_name.setText("邮箱");
+        email_item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), EmailActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setupQQ(View view){
         View qq_item = view.findViewById(R.id.qq);
         TextView qq_name = (TextView) qq_item.findViewById(R.id.item_name);
         qq_name.setText("QQ");
+        qq_item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), QQActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setupWeiXin(View view){
         View wx_item = view.findViewById(R.id.weixin);
         TextView wx_name = (TextView) wx_item.findViewById(R.id.item_name);
         wx_name.setText("微信");
+        wx_item.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), WXActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void setupDeviceManager(View view) {

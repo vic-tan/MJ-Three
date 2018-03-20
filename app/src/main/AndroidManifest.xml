@@ -33,6 +33,10 @@
         <activity
             android:name="com.cast.lottery.mj.activity.HistoryDetailActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".activity.WXActivity"/>
+        <activity android:name=".activity.EmailActivity"/>
+        <activity android:name=".activity.PhoneActivity"/>
+        <activity android:name=".activity.QQActivity"/>
         <activity android:name="com.cast.lottery.mj.activity.LoginDeviceManager" />
 
         <service
