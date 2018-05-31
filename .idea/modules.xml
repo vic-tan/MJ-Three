@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MJ-Three.iml" filepath="$PROJECT_DIR$/MJ-Three.iml" />
+      <module fileurl="file://E:\MJ\word\project\MJ-Three\MJ-Three.iml" filepath="E:\MJ\word\project\MJ-Three\MJ-Three.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lottery_cast.iml" filepath="$PROJECT_DIR$/lottery_cast.iml" />
+      <module fileurl="file://E:\MJ\word\project\MJ-Three\app\app.iml" filepath="E:\MJ\word\project\MJ-Three\app\app.iml" />
+      <module fileurl="file://E:\MJ\word\project\MJ-Three\lottery_cast.iml" filepath="E:\MJ\word\project\MJ-Three\lottery_cast.iml" />
     </modules>
   </component>
 </project>
